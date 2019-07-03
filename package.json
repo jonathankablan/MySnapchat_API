@@ -1,24 +1,30 @@
 {
-    "name" : "my-snapchat-api",
-    "version" : "0.0.1",
-    "description" : "La vraie API RESTFUL de My_Snapchat, pas comme celle du prestataire douteux.",
-    "author"    : "Rodolphe Laidet <rodolphe.laidet@epitech.eu>",
-    "keywords" : [
-                "snapchat",
-                "api",
-                "campus"
-    ],
-    "license": "MIT",
-    "main" : "server.js",
-    "dependencies" : {
-        "express" : "~4.13.4",
-        "multer" : "~1.1.0",
-        "body-parser" : "~1.15.1",
-        "sequelize" : "~3.23.3",
-        "sequelize-cli": "~2.4.0",
-        "mysql" : "~2.11.0",
-        "morgan" : "~1.7.0",
-        "jsonwebtoken" : "~7.0.0",
-        "bcrypt-nodejs" : "~0.0.3"
-    }
+  "name": "my-snapchat-api",
+  "version": "0.0.1",
+  "description": "La vraie API RESTFUL de My_Snapchat, pas comme celle du prestataire douteux.",
+  "author": "Rodolphe Laidet <rodolphe.laidet@epitech.eu>",
+  "keywords": [
+    "snapchat",
+    "api",
+    "campus"
+  ],
+  "license": "MIT",
+  "main": "server.js",
+  "dependencies": {
+    "express": "~4.13.4",
+    "multer": "~1.1.0",
+    "body-parser": "~1.15.1",
+    "sequelize": "~3.23.3",
+    "sequelize-cli": "~2.4.0",
+    "mysql": "~2.11.0",
+    "morgan": "~1.7.0",
+    "jsonwebtoken": "~7.0.0",
+    "bcrypt-nodejs": "~0.0.3",
+    "snyk": "^1.189.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
